@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet');
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; padding: 0; }
+
+body { 
+  color: #fff; 
+  font-family: Oswald, sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 2fr 5fr 3fr;
+  grid-template-areas:
+    "Nav Nav Nav Nav"
+    "side Photo Description Aside"
+    "Footer Footer Footer Footer";
+  grid-gap: 10px;
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+}
+.container > * { padding: 20px; } /* This is a child selector that selects every first level child element in this container */ 
+
+Nav
+{
+  grid-area: Nav;
+  background-color:white;
+  margin-top: 50px;
+  
+}
+
+test
+{
+  grid-area: Home;
+  color:grey;
+  padding: 25px;
+  
+  
+}
+
+side
+{
+  grid-area: side;
+  background-color:white;
+}
+
+div
+{
+  grid-area: Photo;
+  background-color:grey;
+}
+
+
+
+main
+{
+  grid-area: Description;
+  color: black
+}
+
+aside
+{
+  grid-area: Aside;
+  background-color:white;
+}
+
+
+footer
+{
+  grid-area: Footer;
+  background-color:#F7E5E2;
+  color: black;
+  
+  
+}
